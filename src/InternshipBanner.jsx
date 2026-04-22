@@ -1,6 +1,21 @@
 import React, { useEffect, useState } from "react";
 import "./InternshipBanner.css";
 import logoImage from "./assets/logo.png";
+import certificateStudentImage from "./assets/CERTIFICATE GIVING TO STUDENT.jpeg";
+import certificateSecondStudentImage from "./assets/GIVING CERTIFICATE TO SECOND STUDENT.jpeg";
+import ladiesHallImage from "./assets/LADIES IS SPEACKING IN HALL.jpeg";
+import ladiesMicImage from "./assets/LADIES IS SPEAKING , MIRCO SHOOT.jpeg";
+import mamSeminarImage from "./assets/MAM SPEAKING IN SEMINAR.jpeg";
+import secondStudentGroupImage from "./assets/SECOND STUDENT GROUP IMAGE.jpeg";
+import seminarImage from "./assets/SEMINAR.jpeg";
+import seniorTeachersImage from "./assets/SENIOR TEACHERS SITTING IN THE HALL ON THE TABLE.jpeg";
+import studentGroupImage from "./assets/STUDENT GROUP IMAGE.jpeg";
+import studentTakingClassImage from "./assets/STUDENT TAKING CLASS.jpeg";
+import studentTeacherDiscussionSecondImage from "./assets/STUDENT TEACHER DISCUSIION SECOND SHORT.jpeg";
+import studentTeacherDiscussionTwoImage from "./assets/STUDENT TEACHER DISCUSION 2.jpeg";
+import studentTeacherGroupDiscussionImage from "./assets/STUDENT TEACHER GROUP DISCUSSION.jpeg";
+import classLearningVideo from "./assets/STUNDENT LEARING IN CLASS VIDEO.mp4";
+import thirdGroupImage from "./assets/THIRD GROUP IMAGE.jpeg";
 
 const objectives = [
   "Projects and Presentations on Mental Health",
@@ -22,43 +37,38 @@ const learnerChallenges = [
 const fieldSteps = [
   {
     id: "STEP 1",
-    title: "You won't just sit in a classroom.",
+    title: "Start with guided classroom learning.",
     description:
-      "Real psychology happens in the real world. Our program takes you beyond theory into actual human environments.",
-    image:
-      "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1400&q=80",
+      "Build confidence through structured sessions where mentors explain how theory is used in practical situations.",
+    image: studentTakingClassImage,
   },
   {
     id: "STEP 2",
-    title: "You will be in cafes. Watching conversations.",
+    title: "Observe live seminar communication.",
     description:
-      "Learn to observe social dynamics, body language, and interpersonal communication in natural settings.",
-    image:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1400&q=80",
+      "Watch experts present real psychology topics and learn how ideas are explained to a room full of learners.",
+    image: mamSeminarImage,
   },
   {
     id: "STEP 3",
-    title: "In public spaces. Observing behaviour.",
+    title: "Practice public speaking and presentation.",
     description:
-      "Study crowd psychology, stress responses, and decision-making in high-pressure urban environments.",
-    image:
-      "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1400&q=80",
+      "Develop confidence by sharing your psychology understanding in hall sessions and group presentations.",
+    image: ladiesHallImage,
   },
   {
     id: "STEP 4",
-    title: "In communities. Understanding people.",
+    title: "Join mentor-led discussion circles.",
     description:
-      "Engage with diverse groups to understand cultural contexts, social structures, and group dynamics.",
-    image:
-      "https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&w=1400&q=80",
+      "Participate in student-teacher discussions where you ask questions, reflect, and connect concepts with practice.",
+    image: studentTeacherDiscussionTwoImage,
   },
   {
     id: "STEP 5",
-    title: "Psychology in real life.",
+    title: "Complete with certificate recognition.",
     description:
-      "Transform your understanding of human behavior through hands-on experience and expert mentorship.",
-    image:
-      "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1400&q=80",
+      "Showcase your learning journey and receive completion certificates that support your academic and career profile.",
+    image: certificateStudentImage,
   },
 ];
 
@@ -113,40 +123,54 @@ const internshipPlans = [
 
 const immersionTiles = [
   {
-    title: "Live Training",
-    image:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80",
+    title: "Live Seminar Room",
+    image: seminarImage,
     className: "tile-large",
   },
   {
-    title: "Real-World Observation",
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=80",
+    title: "Faculty Insight Sessions",
+    image: seniorTeachersImage,
     className: "tile-top-right",
   },
   {
-    title: "Peer Practice",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=80",
+    title: "Student-Teacher Group Discussion",
+    image: studentTeacherGroupDiscussionImage,
     className: "tile-mid-right",
   },
   {
-    title: "Community Exposure",
-    image:
-      "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1400&q=80",
+    title: "Focused Discussion Circle",
+    image: studentTeacherDiscussionSecondImage,
     className: "tile-bottom-1",
   },
   {
-    title: "Shadowing",
-    image:
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1400&q=80",
+    title: "Student Team Cohort",
+    image: studentGroupImage,
     className: "tile-bottom-2",
   },
   {
-    title: "Listening Circles",
-    image:
-      "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1400&q=80",
+    title: "In-Class Learning Video",
+    video: classLearningVideo,
+    poster: studentTakingClassImage,
     className: "tile-bottom-3",
+  },
+];
+
+const programHighlights = [
+  {
+    title: "Certificate Ceremony",
+    image: certificateSecondStudentImage,
+  },
+  {
+    title: "Seminar Mic Session",
+    image: ladiesMicImage,
+  },
+  {
+    title: "Second Student Group",
+    image: secondStudentGroupImage,
+  },
+  {
+    title: "Third Student Group",
+    image: thirdGroupImage,
   },
 ];
 
@@ -374,8 +398,8 @@ export default function InternshipBanner() {
 
         <article className="experience-media">
           <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
-            alt="Students learning together in an interactive workshop setting"
+            src={ladiesMicImage}
+            alt="Speaker presenting in seminar with projection setup"
             loading="lazy"
           />
           <div className="media-badge">
@@ -399,6 +423,15 @@ export default function InternshipBanner() {
 
         <div className="challenge-note">
           This is not only a knowledge gap. It is an exposure and practice gap.
+        </div>
+
+        <div className="program-highlights">
+          {programHighlights.map((item) => (
+            <article key={item.title} className="highlight-card">
+              <img src={item.image} alt={item.title} loading="lazy" />
+              <p>{item.title}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -464,7 +497,14 @@ export default function InternshipBanner() {
         <div className="immersion-grid">
           {immersionTiles.map((tile) => (
             <article key={tile.title} className={`immersion-tile ${tile.className}`}>
-              <img src={tile.image} alt={tile.title} loading="lazy" />
+              {tile.video ? (
+                <video controls preload="metadata" poster={tile.poster}>
+                  <source src={tile.video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <img src={tile.image} alt={tile.title} loading="lazy" />
+              )}
               <div className="immersion-overlay" />
               <h4>{tile.title}</h4>
             </article>

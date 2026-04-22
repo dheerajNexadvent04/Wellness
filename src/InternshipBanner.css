@@ -393,6 +393,36 @@ a {
   background: transparent;
 }
 
+.program-highlights {
+  margin: 26px auto 0;
+  width: min(1060px, 100%);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.highlight-card {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.highlight-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.highlight-card p {
+  margin: 0;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .step-series {
   margin-bottom: 72px;
   display: grid;
@@ -849,11 +879,19 @@ a {
   transition: transform 500ms ease;
 }
 
+.immersion-tile video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .immersion-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
   transition: background 280ms ease;
+  pointer-events: none;
 }
 
 .immersion-tile h4 {
@@ -1380,6 +1418,10 @@ a {
     font-size: 1rem;
   }
 
+  .program-highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .step-series {
     gap: 22px;
   }
@@ -1540,6 +1582,10 @@ a {
 
   .challenge-item {
     padding: 10px 12px;
+  }
+
+  .program-highlights {
+    grid-template-columns: 1fr;
   }
 
   .pricing-card,
