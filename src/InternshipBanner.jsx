@@ -639,6 +639,25 @@ export default function InternshipBanner() {
         </div>
       </section>
 
+      <div className="mobile-sticky-whatsapp" aria-label="Sticky WhatsApp booking button">
+        <a
+          className="mobile-sticky-whatsapp-btn"
+          href={whatsappBookingLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Book your slot on WhatsApp"
+        >
+          <span className="mobile-sticky-btn-main">
+            <span className="mobile-sticky-btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M19.05 4.91A9.82 9.82 0 0 0 12.03 2c-5.45 0-9.88 4.43-9.88 9.88 0 1.74.45 3.44 1.31 4.95L2 22l5.34-1.4a9.84 9.84 0 0 0 4.69 1.2h.01c5.45 0 9.88-4.43 9.88-9.88a9.8 9.8 0 0 0-2.87-7.01Zm-7.02 15.22h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.17.83.85-3.09-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.53 3.68-8.21 8.22-8.21a8.14 8.14 0 0 1 5.82 2.41 8.16 8.16 0 0 1 2.4 5.81c0 4.53-3.68 8.22-8.21 8.22Zm4.5-6.16c-.25-.12-1.47-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.28.18-.53.06-.25-.12-1.04-.38-1.98-1.22a7.34 7.34 0 0 1-1.37-1.71c-.14-.25-.02-.38.1-.5.11-.11.25-.28.37-.42.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.49-.4-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.06 0 1.22.88 2.39 1.01 2.56.12.16 1.72 2.62 4.16 3.67.58.25 1.04.4 1.39.51.58.18 1.1.15 1.52.09.46-.07 1.47-.6 1.67-1.18.21-.57.21-1.06.14-1.18-.06-.11-.22-.17-.47-.29Z" />
+              </svg>
+            </span>
+            <span>Book Your Slot</span>
+          </span>
+        </a>
+      </div>
+
       <footer className="site-footer">
         <div className="page-shell footer-grid">
           <div className="footer-brand">
